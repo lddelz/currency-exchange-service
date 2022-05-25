@@ -17,7 +17,6 @@ public class CurrencyExchangeController {
 
     private final Logger logger = LoggerFactory.getLogger(CurrencyExchangeController.class);
 
-
     private final CurrencyExchangeRepository currencyExchangeRepository;
     private final Environment environment;
 
