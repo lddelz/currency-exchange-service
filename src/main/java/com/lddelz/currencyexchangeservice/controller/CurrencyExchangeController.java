@@ -33,7 +33,7 @@ public class CurrencyExchangeController {
             throw new RuntimeException("Unable to Find data for " + from + " to " + to);
         }
         logger.info("Currency exchange service host: {}", Inet4Address.getLocalHost().getHostAddress());
-        currencyExchange.setPort(environment.getProperty("local.server.port"));
+        currencyExchange.setPort(System.getenv("HOSTNAME"));
         return currencyExchange;
     }
 
